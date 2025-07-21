@@ -1,8 +1,8 @@
-kill @e[type=armor_stand,tag=death,tag=death2,tag=d2,sort=random,limit=1]
+kill @e[type=armor_stand,tag=death,tag=death2,sort=random,limit=1]
 kill @e[type=armor_stand,tag=death,tag=death2,tag=d3,sort=random,limit=1]
-kill @e[type=armor_stand,tag=death,tag=death2,tag=d3,sort=random,limit=1]
-kill @e[type=armor_stand,tag=death,tag=death2,tag=d3,sort=random,limit=1]
-kill @e[type=armor_stand,tag=death,tag=death2,tag=d4,sort=random,limit=1]
+kill @e[type=armor_stand,tag=death,tag=death2,sort=random,limit=1]
+kill @e[type=armor_stand,tag=death,tag=death2,sort=random,limit=1]
+kill @e[type=armor_stand,tag=death,tag=death2,sort=random,limit=1]
 execute as @e[type=armor_stand,tag=death,tag=death2,scores={aa=17}] run scoreboard players set @e[type=armor_stand,tag=score] aa 69
 execute as @e[type=armor_stand,tag=death,tag=death2,scores={ab=17}] run scoreboard players set @e[type=armor_stand,tag=score] ab 69
 execute as @e[type=armor_stand,tag=death,tag=death2,scores={ac=17}] run scoreboard players set @e[type=armor_stand,tag=score] ac 69

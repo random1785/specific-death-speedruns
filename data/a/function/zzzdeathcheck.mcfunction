@@ -100,7 +100,9 @@ execute as @a[scores={death=18..,bx=18},gamemode=survival] run scoreboard player
 execute as @a[scores={death=18..,bx=18},gamemode=survival] run scoreboard players add @s bx 1
 
 
-execute as @a[scores={death=18..,done=1},gamemode=survival] run tellraw @a [{"color":"yellow","bold":true,"selector":"@s"},{"bold":false,"text":" has completed one objective!"}]
-execute as @a[scores={death=18..,done=2},gamemode=survival] run tellraw @a [{"color":"green","bold":true,"selector":"@s"},{"bold":false,"text":" has completed two objectives!"}]
+execute as @a[scores={death=18..,done=1},gamemode=survival,tag=!one] run tellraw @a [{"color":"yellow","bold":true,"selector":"@s"},{"bold":false,"text":" has completed one objective!"}]
+execute as @a[scores={death=18..,done=1},gamemode=survival,tag=!one] run tag @s add one
+execute as @a[scores={death=18..,done=2},gamemode=survival,tag=!two] run tellraw @a [{"color":"green","bold":true,"selector":"@s"},{"bold":false,"text":" has completed two objectives!"}]
+execute as @a[scores={death=18..,done=2},gamemode=survival,tag=!two] run tag @s add two
 
 execute as @a[scores={death=18..},gamemode=survival] run scoreboard players set @s death 17

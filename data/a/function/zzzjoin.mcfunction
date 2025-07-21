@@ -3,6 +3,8 @@ execute as @a[scores={temp=1..}] run execute unless score @s score matches -6942
 
 # new person
 execute as @a run execute unless score @s score matches -69421.. run tag @s add a
+execute as @a run execute unless score @s score matches -69421.. run tag @s remove one
+execute as @a run execute unless score @s score matches -69421.. run tag @s remove two
 execute as @a run execute unless score @s score matches -69421.. run gamemode spectator @s
 execute as @a run execute unless score @s score matches -69421.. run tellraw @s {"text":"you have joined in the middle of a round! please spectate the current round and wait for a new one to begin.","color":"gray"}
 execute as @a run execute unless score @s score matches -69421.. run tp @s 0 302 0
