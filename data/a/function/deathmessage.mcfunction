@@ -121,9 +121,9 @@ execute as @e[type=armor_stand,tag=score,scores={ai=17}] run tellraw @a {"text":
 execute as @e[type=armor_stand,tag=score,scores={aj=17}] run tellraw @a {"text":"Goal: [<player> blew up]","color":"red","hover_event":{"action":"show_text","value":{"text":"<player> blew up\nDie to a TNT ignited by redstone (e.g. button, lever, pressure plate)","color":"gold"}}}
 execute as @e[type=armor_stand,tag=score,scores={ak=17}] run tellraw @a {"text":"Goal: [<player> was blown up by <mob>]","color":"red","hover_event":{"action":"show_text","value":{"text":"<player> was blown up by <mob>\nDie to Creeper or a TNT ignited by a player","color":"gold"}}}
 execute as @e[type=armor_stand,tag=score,scores={al=17}] run tellraw @a {"text":"Goal: [<player> hit the ground too hard]","color":"red","hover_event":{"action":"show_text","value":{"text":"<player> hit the ground too hard\nDie to a 5 block fall or less without having taken damage from a mob within 5 seconds","color":"gold"}}}
+execute as @e[type=armor_stand,tag=score,scores={al=17}] run tellraw @a {"color":"dark_red","text":"You cannot get hit the ground too hard if you have taken fall damage within the last 5 seconds!"}
 execute as @e[type=armor_stand,tag=score,scores={am=17}] run tellraw @a {"text":"Goal: [<player> hit the ground too hard while trying to escape <mob>]","color":"red","hover_event":{"action":"show_text","value":{"text":"<player> hit the ground too hard while trying to escape <mob>\nDie to a 5 block fall or less having taken damage from a mob within 5 seconds","color":"gold"}}}
-execute as @e[type=armor_stand,tag=score,scores={al=17}] run tellraw @a[scores={reminder=1..}] {"color":"dark_red","text":"Sometimes due to desync hit the ground too hard is impossible to get. To avoid this, simply enter and exit a boat."}
-execute as @e[type=armor_stand,tag=score,scores={am=17}] run tellraw @a[scores={reminder=1..}] {"color":"dark_red","text":"Sometimes due to desync hit the ground too hard is impossible to get. To avoid this, simply enter and exit a boat."}
+execute as @e[type=armor_stand,tag=score,scores={am=17}] run tellraw @a {"color":"dark_red","text":"You cannot get hit the ground too hard if you have taken fall damage within the last 5 seconds!"}
 execute as @e[type=armor_stand,tag=score,scores={an=17}] run tellraw @a {"text":"Goal: [<player> was skewered by a falling stalactite]","color":"red","hover_event":{"action":"show_text","value":{"text":"<player> was skewered by a falling stalactite\nDie to a falling dripstone","color":"gold"}}}
 execute as @e[type=armor_stand,tag=score,scores={ao=17}] run tellraw @a {"text":"Goal: [<player> was fireballed by <mob>]","color":"red","hover_event":{"action":"show_text","value":{"text":"<player> was fireballed by <mob>\nDie to the fireball of a mob (e.g. Ghast or Blaze)","color":"gold"}}}
 execute as @e[type=armor_stand,tag=score,scores={ap=17}] run tellraw @a {"text":"Goal: [<player> went off with a bang]","color":"red","hover_event":{"action":"show_text","value":{"text":"<player> went off with a bang\nDie to a firework rocket","color":"gold"}}}
@@ -166,3 +166,4 @@ execute as @e[type=armor_stand,tag=score,scores={bx=17}] run tellraw @a {"text":
 
 
 execute as @e run scoreboard players set @s ex 1
+
