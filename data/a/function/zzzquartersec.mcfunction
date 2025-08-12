@@ -109,8 +109,6 @@ execute as @a[scores={done=3..},tag=!a] run execute as @e[limit=1,type=minecraft
 execute as @a[scores={done=3..},tag=!a] run execute as @e[limit=1,type=minecraft:armor_stand,tag=score,scores={first=2000..3999},tag=!z] run scoreboard players set @s ex 2
 execute as @a[scores={done=3..},tag=!a] run execute as @e[limit=1,type=minecraft:armor_stand,tag=score,scores={first=4000..10000},tag=!z] run scoreboard players set @s ex 1
 
-execute as @a[scores={done=3..},tag=!a] run execute as @e[limit=1,type=minecraft:armor_stand,tag=score] run tag @s add z
-
 # ensure forfeited players do not get screwed over
 execute as @a[scores={done=3..},tag=!a] run execute as @e[limit=1,type=minecraft:armor_stand,tag=score,scores={first=1..999},tag=!z] run scoreboard players set @a[scores={calc=15000}] calc 3000
 execute as @a[scores={done=3..},tag=!a] run execute as @e[limit=1,type=minecraft:armor_stand,tag=score,scores={first=1000..1999},tag=!z] run scoreboard players set @a[scores={calc=15000}] calc 5000
@@ -123,6 +121,8 @@ execute as @a[scores={done=3..},tag=!a] run execute as @e[limit=1,type=minecraft
 execute as @a[scores={done=3..},tag=!a] run execute as @e[limit=1,type=minecraft:armor_stand,tag=score,scores={first=1..999},tag=!z] run scoreboard players set @a[scores={calc=10500}] calc 2050
 execute as @a[scores={done=3..},tag=!a] run execute as @e[limit=1,type=minecraft:armor_stand,tag=score,scores={first=1000..1999},tag=!z] run scoreboard players set @a[scores={calc=10500}] calc 4100
 execute as @a[scores={done=3..},tag=!a] run execute as @e[limit=1,type=minecraft:armor_stand,tag=score,scores={first=2000..3999},tag=!z] run scoreboard players set @a[scores={calc=10500}] calc 7300
+
+execute as @a[scores={done=3..},tag=!a] run execute as @e[limit=1,type=minecraft:armor_stand,tag=score] run tag @s add z
 
 
 # 	rest of the stuff
