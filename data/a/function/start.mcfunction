@@ -23,6 +23,8 @@ tag @a remove a
 execute as @a at @s run playsound minecraft:block.trial_spawner.ominous_activate
 title @a title {"text":"game starting!","color":"green"}
 schedule function a:zzzstart1 20t
+schedule function a:zzzcheck 6t
+schedule function a:zzzcheck1 10t
 gamemode survival @a
 scoreboard players set @e[type=armor_stand,tag=score,limit=1] two 2
 

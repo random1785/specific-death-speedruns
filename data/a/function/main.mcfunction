@@ -53,6 +53,8 @@ tellraw @a {"text":" [direct link to chunkbase]","color":"aqua","click_event":{"
 
 # create spawn platform
 schedule function a:zzzspawn 5t
+schedule function a:zzzcheck 6t
+schedule function a:zzzcheck1 10t
 execute in the_nether run forceload add -13 -14 25 24
 place template a:lobbyoverworld1 -12 295 -14
 setworldspawn 0 302 0
