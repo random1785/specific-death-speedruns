@@ -41,6 +41,7 @@ scoreboard objectives add place dummy
 scoreboard objectives add rounds dummy
 scoreboard objectives add twok dummy
 scoreboard objectives add glass minecraft.mined:minecraft.glass
+scoreboard objectives add echo minecraft.used:minecraft.echo_shard
 scoreboard objectives add stick minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add death deathCount
 scoreboard players set @a death 1785

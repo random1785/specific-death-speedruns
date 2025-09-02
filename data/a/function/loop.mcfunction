@@ -29,7 +29,7 @@ team join a @a[tag=!new]
 # powerup
 execute as @e[tag=score,scores={round=1,scoretick=..0}] run scoreboard players reset @a[scores={stick=1..}] stick
 execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores={stick=1..}] run function a:zzzpowerup
-
+execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores={echo=1..}] run function a:zzzpowersp
 
 
 # player timer 
